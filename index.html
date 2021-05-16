@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- ヘッダー -->
+<div class="top">
+<header>
+    <h1>ルーレット</h1>
+</header>
+
+<!-- 入力フォームや候補を表示する場所 -->
+<section> 
+  <div class="container">
+    <form>
+      <input type="text" placeholder="候補を入力  ※改行で追加">
+      <input type="submit">
+    </form>
+    <ul>
+      <!-- <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li>
+      <li>k</li> -->
+    </ul>  
+  </div>
+</section>
+</div>
+
+<div class="bottom">
+<!-- ボタンを表示するところ -->
+<section>
+  <button id="start">Start</button>
+  <button id="stop">stop</button>
+  <button id="reload">RELOAD</button>
+  <button id="three">3択まで絞る</button>
+</section>
+
+<!-- 結果を表示するところ(この後はリセットするしかないのでposition fixed を設定したい) -->
+<section id="result"></section>
+
+<!-- フッター -->
+<footer>
+  <p>© Yasu 2021</p>
+</footer>
+</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

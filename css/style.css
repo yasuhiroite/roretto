@@ -117,29 +117,28 @@ form input[type="submit"] {
   height:70%;
   width:100%;
   background:cyan;
-  margin-bottom:30px;
 }
 
 .bottom{
   height:30%;
   width:100%;
   background:yellow;
+  display: flex;
+  flex-direction: column;
 }
 
 .bottom > section {
-  height:100%;
   width:288px;
   margin:0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex:1;
 }
 
 footer {
   width:100%;
   padding:8px 0;
-  position:absolute;
-  bottom:0;
 }
 
 footer p {

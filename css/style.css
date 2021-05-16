@@ -38,8 +38,11 @@ form {
 
 form input[type="text"] {
   width:288px;
-  padding:8px 8px;
+  font-size:20px;
+  padding:8px 4px;
 }
+
+
 
 form input[type="submit"] {
   display: none;
@@ -101,20 +104,20 @@ form input[type="submit"] {
   display:none;
 }
 
-#three {
+#three.show {
   display: block;
 }
 
 .top {
   height:70%;
   width:100%;
-  background:cyan;
+  /* background:cyan; */
 }
 
 .bottom{
   height:30%;
   width:100%;
-  background:yellow;
+  /* background:yellow; */
 }
 
 .bottom > section {

@@ -2,6 +2,7 @@
   padding:0;
   margin:0;
   box-sizing: border-box;
+  overflow: auto;
 }
 
 html {
@@ -62,11 +63,9 @@ form input[type="submit"] {
 
 .container ul {
   list-style: none;
-  background:lime;
 }
 
 .container ul li {
-  background:tomato;
   line-height: 1.6;
   display: flex;
   justify-content: space-between;

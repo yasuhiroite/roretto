@@ -42,6 +42,10 @@ form input[type="text"] {
   padding:8px 4px;
 }
 
+form input[type="text"]::placeholder {
+  font-size :13px;
+}
+
 
 
 form input[type="submit"] {
@@ -63,6 +67,7 @@ form input[type="submit"] {
 
 .container ul li {
   background:tomato;
+  line-height: 1.6;
   display: flex;
   justify-content: space-between;
 }
@@ -111,13 +116,13 @@ form input[type="submit"] {
 .top {
   height:70%;
   width:100%;
-  /* background:cyan; */
+  background:cyan;
 }
 
 .bottom{
   height:30%;
   width:100%;
-  /* background:yellow; */
+  background:yellow;
 }
 
 .bottom > section {

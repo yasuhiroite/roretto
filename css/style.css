@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  height:33%;
+  height:29%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,30 +75,64 @@ form input[type="submit"] {
   vertical-align:middle;
 }
 
-#stop {
-  display:none;
+#start , #three {
+  background:rgba(255, 144, 144,.7);
+  width:120px;
+  font-size:15px;
+  letter-spacing: 2px;
+  box-shadow: 0 1px 1px rgba(255, 100, 100,1);
+  color:#fff;
+  font-weight:bold;
+  height:50px;
+  line-height: 50px;
+  border-radius:4px;
+  text-align: center;
 }
 
-#reload {
+#start:hover,
+#three:hover {
+  opacity:0.8;
+}
+
+#stop,
+#reload,
+#three,
+#result {
   display:none;
 }
 
 #three {
-  display:none;
-}
-
-#result {
-  display: none;
+  display: block;
 }
 
 .top {
-  height:60%;
+  height:70%;
   width:100%;
   background:cyan;
 }
 
-.bottom {
-  height:40%;
+.bottom{
+  height:30%;
   width:100%;
   background:yellow;
+}
+
+.bottom > section {
+  height:100%;
+  width:288px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  width:100%;
+  padding:8px 0;
+  position:absolute;
+  bottom:0;
+}
+
+footer p {
+  text-align: center;
 }

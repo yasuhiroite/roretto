@@ -50,8 +50,15 @@
       box.push(candidate.textContent);
     });
 
+    result.classList.add('show');
+    start.classList.add('hide');
+    stop.classList.add('show');
+    reload.classList.add('show');
+
+    let p = document.querySelector('#result > p');
+
     function roretto() {
-      result.textContent = box[Math.floor(Math.random() * box.length)];
+      p.textContent = box[Math.floor(Math.random() * box.length)];
 
       timeoutId = setTimeout(() => {
         roretto();

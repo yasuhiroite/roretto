@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>ルーレットアプリ</title>
 </head>
 <body>
   <!-- ヘッダー -->
-<div class="top">
-<header>
-    <h1>ルーレット</h1>
-</header>
+  <header>
+      <h1>ルーレット</h1>
+  </header>
+  <!-- ヘッダー終了 -->
 
-<!-- 入力フォームや候補を表示する場所 -->
-<section> 
-  <div class="container">
-    <form>
-      <input type="text" placeholder="候補を入力してください ※改行で送信できます">
-      <input type="submit">
-    </form>
-    <ul></ul>  
-  </div>
-</section>
-</div>
+  <!-- 入力フォームや候補を表示する場所 -->
+  <section class="default"> 
+    <div class="container">
+      <form>
+        <input type="text" placeholder="候補を入力 ※改行で送信できます">
+        <input type="submit">
+      </form>
+      <ul></ul>  
+    </div>
+  </section>
+  <!-- 入力フォームや候補を表示する場所終了 -->
+  
 
-
-<!-- 結果を表示するところ(この後はリセットするしかないのでposition fixed を設定したい) -->
-<section id="result">
+  <!-- 結果を表示するところ-->
+  <section id="result">
   <p></p>
-<button id="stop">stop</button>
-<button id="reload">RELOAD</button>
-
 </section>
+<!-- 結果表示のところ終了 -->
 
-<div class="bottom">
 <!-- ボタンを表示するところ -->
-<section>
-  <div id="start">START</div>
-  <div id="three">3択まで絞る</div>
-</section>
+<div class="bottom">
+  <section class="buttons">
+    <div id="stop" class="btn">stop</div>
+    <div id="reload" class="btn">RELOAD</div>
+    <div id="start" class="btn">START</div>
+    <div id="three" class="btn">3択にする</div>
+  </section>
+  <!-- ボタンを表示するところ終了 -->
 
-<!-- フッター -->
-<footer>
-  <p>© Yasu 2021</p>
-</footer>
+  <!-- フッター -->
+  <footer>
+    <p>© Yasu 2021</p>
+  </footer>
+  <!-- フッター終了 -->
 </div>
 
   <script src="js/main.js"></script>
